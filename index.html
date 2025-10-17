@@ -1,91 +1,131 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Моя первая страница — ArcheAge</title>
-  <style> body{font-family:system-ui, sans-serif;max-width:900px;margin:0 auto;padding:20px;line-height:1.6}
-  header,main,footer{margin:16px 0} nav a{margin-right:8px} img{border-radius:8px} table{border-collapse:collapse}
-  td,th{border:1px solid #ccc;padding:6px} blockquote{border-left:4px solid #6ea8fe;padding:8px 12px;background:#f6f8fa;border-radius:8px}
-  </style>
-</head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArcheAge — фэнтезийная MMORPG</title>
+    <!-- Подключаем CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 <body>
-  <header>
-    <h1>ArcheAge</h1>
-    <p>Фэнтезийная массовая многопользовательская ролевая онлайн-игра для PC.</p>
-    <nav>
-      <a href="#description">Описание</a>| 
-      <a href="#info">Информация</a>| 
-      <a href="devs.html">Разработчики</a>| 
-      <a href="#poster">Постер</a>
-    </nav>
-  </header>
+    <div class="container">
+        <header class="game-header">
+            <h1>ArcheAge</h1>
+            <p class="tagline">Фэнтезийная массовая многопользовательская ролевая онлайн-игра для PC</p>
 
-  <main>
-    <section id="description">
-      <h2>Описание</h2>
-      <p>Действие игры происходит во вселенной ArcheAge — фэнтезийном мире с элементами средневековья, 
-        магии и стимпанка, созданном по мотивам книг корейской писательницы Мин Хи Чон.
-      </p>
-    </section>
+            <nav class="main-nav">
+                <a href="#description">Описание</a>
+                <a href="#info">Информация</a>
+                <a href="devs.html">Разработчики</a>
+                <a href="#poster">Постер</a>
+            </nav>
+        </header>
 
-    <section id="info">
-      <h2>Основная информация</h2>
-      <p><strong>Год выпуска в РФ:</strong> 2014</p>
-      <p><strong>Издатель в РФ:</strong> Astrum Ent</p>
-      <p><strong>Жанр:</strong> Массовая многопользовательская ролевая онлайн-игра</p>
-      <p><strong>Игровой движок:</strong> CryEngine 3</p>
-    </section>
+        <main>
+            <section id="description" class="content-section">
+                <h2>Описание</h2>
+                <p>Действие игры происходит во вселенной ArcheAge — фэнтезийном мире с элементами средневековья, магии и стимпанка, созданном по мотивам книг корейской писательницы Мин Хи Чон.</p>
+            </section>
 
-    <section id="devs">
-      <h2>Разработчики</h2>
-      <ul>
-        <li>Компания XLGAMES</li>
-        <li>Основатель - Джейк Сонг</li>
-        <li>Ведущий гейм-дизайнер - Йонг Джин Хан</li>
-      </ul>
-      <h2>Почему стоит поиграть</h2>
-      <ol>
-        <li>Лучшая графика на год выпуска</li>
-        <li>Огромное количество различных механик</li>
-        <li>Лучшая боёвка</li>
-        <li>Хороший онлайн</li>
-      </ol>
-    </section>
+            <section id="info" class="content-section">
+                <h2>Основная информация</h2>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <span class="label">Год выпуска в РФ:</span>
+                        <span class="value">2014</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Издатель в РФ:</span>
+                        <span class="value">Astrum Entertainment</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Жанр:</span>
+                        <span class="value">Массовая многопользовательская ролевая онлайн-игра</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="label">Игровой движок:</span>
+                        <span class="value">CryEngine 3</span>
+                    </div>
+                </div>
+            </section>
 
-    <section id="poster">
-      <h2>Постер игры</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/8/86/ArcheAge_Logo.png/330px-ArcheAge_Logo.png" alt="Постер игры ArcheAge" width="300">
-    </section>
+            <section id="devs" class="content-section">
+                <h2>Разработчики</h2>
+                <ul>
+                    <li>Компания XLGAMES</li>
+                    <li>Основатель — Джейк Сонг</li>
+                    <li>Ведущий гейм-дизайнер — Йонг Джин Хан</li>
+                </ul>
 
-    <section id="links">
-      <h2>Дополнительная информация</h2>
-      <p><a href="https://archeage.ru/" target="_blank">Играть в РФ</a></p>
-      <p><a href="https://ru.wikipedia.org/wiki/ArcheAge" target="_blank">Статья в Википедии</a></p>
-    </section>
+                <h2>Почему стоит поиграть</h2>
+                <ol>
+                    <li>Лучшая графика на год выпуска</li>
+                    <li>Огромное количество различных механик</li>
+                    <li>Лучшая боёвка</li>
+                    <li>Хороший онлайн</li>
+                </ol>
+            </section>
 
-    <section>
-      <h2>Дата выпуска</h2>
-      <table>
-        <tr><th>Страна</th><th>Дата</th></tr>
-        <tr><td>Южная Корея</td><td>15 января 2013</td></tr>
-        <tr><td>Япония</td><td>23 июля 2013</td></tr>
-        <tr><td>Россия</td><td>22 февраля 2014</td></tr>
-        <tr><td>Европа</td><td>16 сентября 2014</td></tr>
-        <tr><td>США</td><td>16 сентября 2014</td></tr>
-        <tr><td>Китай</td><td>14 декабря 2017</td></tr>
-      </table>
-    </section>
+            <section id="poster" class="content-section">
+                <h2>Постер игры</h2>
+                <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/8/86/ArcheAge_Logo.png/330px-ArcheAge_Logo.png" alt="Постер игры ArcheAge" width="300">
+            </section>
 
-    <section>
-      <h2>Известная цитата от игрока</h2>
-      <blockquote>
-        "Нет хуже игрока, чем хил.
-        Особенно женщина." <br>— <em>Лорд Полтосик</em>
-      </blockquote>
-    </section>
-  </main>
+            <section id="links" class="content-section">
+                <h2>Дополнительная информация</h2>
+                <p><a href="https://archeage.ru/" target="_blank">Играть в РФ</a></p>
+                <p><a href="https://ru.wikipedia.org/wiki/ArcheAge" target="_blank">Статья в Википедии</a></p>
+            </section>
 
-  <footer><hr><p>© 2025 Tnstnb</p></footer>
+            <section class="content-section">
+                <h2>Дата выпуска</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Страна</th>
+                            <th>Дата</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Южная Корея</td><td>15 января 2013</td></tr>
+                        <tr><td>Япония</td><td>23 июля 2013</td></tr>
+                        <tr><td>Россия</td><td>22 февраля 2014</td></tr>
+                        <tr><td>Европа</td><td>16 сентября 2014</td></tr>
+                        <tr><td>США</td><td>16 сентября 2014</td></tr>
+                        <tr><td>Китай</td><td>14 декабря 2017</td></tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section class="content-section">
+                <h2>Известная цитата от игрока</h2>
+                <blockquote>
+                    Нет хуже игрока, чем хил.<br>Особенно женщина.<br>
+                    — <em>Лорд Полтосик</em>
+                </blockquote>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>© 2025 Tnstnb</p>
+        </footer>
+    </div>
+<script>
+// Эффект печатания для заголовка
+const title = document.querySelector('h1');
+const text = title.textContent;
+title.textContent = '';
+let i = 0;
+
+function typeWriter() {
+    if (i < text.length) {
+        title.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 100);
+    }
+}
+
+window.addEventListener('load', typeWriter);
+</script>
 </body>
 </html>

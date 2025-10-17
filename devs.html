@@ -2,56 +2,71 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Разработчики — ArcheAge</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Разработчики ArcheAge</h1>
-    <nav>
-      <a href="index.html">Главная</a> |
-      <a href="#team">Команда</a> |
-      <a href="#video">Видео</a> |
-      <a href="#feedback">Отзывы</a>
-    </nav>
-  </header>
+  <div class="container">
+    <header class="game-header">
+      <h1>Разработчики ArcheAge</h1>
+      <nav class="main-nav">
+        <a href="index.html">Главная</a>
+        <a href="#team">Команда</a>
+        <a href="#video">Видео</a>
+        <a href="#feedback">Отзывы</a>
+      </nav>
+    </header>
 
-  <main>
-    <section id="team">
-      <h2>Ключевые разработчики</h2>
-      <ul>
-        <li><strong>XLGAMES</strong> — южнокорейская игровая студия, основанная в 2003 году.</li>
-        <li><strong>Джейк Сонг (Jake Song)</strong> — основатель XLGAMES, один из пионеров жанра MMORPG в Азии. Ранее участвовал в создании Lineage.</li>
-        <li><strong>Йонг Джин Хан (Yong Jin Han)</strong> — ведущий гейм-дизайнер ArcheAge, отвечал за баланс, систему классов и открытый мир.</li>
-      </ul>
-      <p>Игра ArcheAge разрабатывалась с 2006 года и изначально задумывалась как революционный проект, сочетающий свободу песочницы и глубину традиционной MMORPG.</p>
-    </section>
+    <main>
+      <section id="team" class="content-section">
+        <h2>Ключевые разработчики</h2>
+        <ul>
+          <li><strong>XLGAMES</strong> — южнокорейская игровая студия, основанная в 2003 году.</li>
+          <li><strong>Джейк Сонг (Jake Song)</strong> — основатель XLGAMES, один из пионеров жанра MMORPG в Азии. Ранее участвовал в создании Lineage.</li>
+          <li><strong>Йонг Джин Хан (Yong Jin Han)</strong> — ведущий гейм-дизайнер ArcheAge, отвечал за баланс, систему классов и открытый мир.</li>
+        </ul>
+        <p>Игра ArcheAge разрабатывалась с 2006 года и изначально задумывалась как революционный проект, сочетающий свободу песочницы и глубину традиционной MMORPG.</p>
+      </section>
 
-    <section id="video">
-      <h2>Официальный трейлер ArcheAge</h2>
-      <iframe src="https://www.youtube.com/embed/hRd4e2-CayM" title="ArcheAge — Трейлер"></iframe>
-    </section>
+      <section id="video" class="content-section">
+        <h2>Официальный трейлер ArcheAge</h2>
+        <div class="video-container">
+          <iframe 
+            src="https://www.youtube.com/embed/hRd4e2-CayM" 
+            title="ArcheAge — Трейлер"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </section>
 
-    <section id="feedback">
-      <h2>Оставьте свой отзыв</h2>
-      <form action="#" method="post">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" name="name" required>
+      <section id="feedback" class="content-section">
+        <h2>Оставьте свой отзыв</h2>
+        <form action="#" method="post">
+          <div class="form-group">
+            <label for="name">Ваше имя:</label>
+            <input type="text" id="name" name="name" required>
+          </div>
 
-        <label for="email">Email (необязательно):</label>
-        <input type="email" id="email" name="email">
+          <div class="form-group">
+            <label for="email">Email (необязательно):</label>
+            <input type="email" id="email" name="email">
+          </div>
 
-        <label for="review">Ваш отзыв:</label>
-        <textarea id="review" name="review" rows="5" placeholder="Расскажите, что вы думаете об ArcheAge..." required></textarea>
+          <div class="form-group">
+            <label for="review">Ваш отзыв:</label>
+            <textarea id="review" name="review" rows="5" placeholder="Расскажите, что вы думаете об ArcheAge..." required></textarea>
+          </div>
 
-        <button type="submit">Отправить отзыв</button>
-      </form>
-    </section>
-  </main>
+          <button type="submit" class="submit-btn">Отправить отзыв</button>
+        </form>
+      </section>
+    </main>
 
-  <footer>
-    <hr>
-    <p>© 2025 Tnstnb</p>
-  </footer>
+    <footer class="site-footer">
+      <p>© 2025 Tnstnb</p>
+    </footer>
+  </div>
 </body>
 </html>
